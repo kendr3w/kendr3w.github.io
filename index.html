@@ -1,59 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi">
 <head>
-    <meta charset='utf-8'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Egorin Portfolio</title>
 
-    <title>Esittely</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 800px;
-      margin: 60px auto;
-      background-color: white;
-      padding: 40px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-      color: #2c3e50;
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-    h2 {
-      color: #34495e;
-      font-size: 28px;
-      margin-top: 30px;
-    }
-    p, li {
-      font-size: 18px;
-      color: #333;
-    }
-    ul {
-      padding-left: 20px;
-    }
-  </style>
+  <!-- Bootstrap 3.3.7 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 </head>
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
-    <h1>Hei! Olen Egor</h1>
-    <p>Olen 17-vuotias ja intohimoinen ohjelmoija.</p>
-    
-    <h2>Ohjelmointitaidot</h2>
-    <ul>
-      <li>Python (pääkielet)</li>
-      <li>HTML (verkkosivujen tekeminen)</li>
-      <li>C# (sovellusten kehitys)</li>
-    </ul>
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Egorin Portfolio</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#minusta">Minusta</a></li>
+          <li><a href="#osaaminen">Osaaminen</a></li>
+          <li><a href="#koulutus">Koulutus</a></li>
+          <li><a href="#projektit">Projektit</a></li>
+          <li><a href="#yhteys">Yhteys</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <h2>Projektit</h2>
-    <p>Minulla on useita omia projekteja, joita olen tehnyt oppimisen ja harrastuksen vuoksi.</p>
+  <div class="container">
+    <div id="minusta" class="row">
+      <div class="col-sm-12">
+        <h2>Minusta</h2>
+        <p>Olen Egor, 17-vuotias ohjelmoinnin harrastaja. Olen kiinnostunut työharjoittelusta ohjelmistokehityksen ja tietotekniikan parissa. Harrastan ohjelmointia, videopelejä ja tekniikkaa.</p>
+        <p><strong>Vahvuudet:</strong> Uutteruus, tavoiteorientoitunut.<br>
+        <strong>Haaste:</strong> Laiskuus - mutta se saa minut keksimään tehokkaita tapoja työskennellä.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="osaaminen" class="row">
+      <div class="col-md-12">
+        <h2>Osaaminen</h2>
+        <ul>
+          <li>HTML, CSS, PHP, Python, C#</li>
+          <li>Bootstrap 3.3</li>
+          <li>Hyvä ymmärrys ohjelmoinnin perusteista</li>
+        </ul>
+        <h3>Kielitaito</h3>
+        <table class="table table-bordered">
+          <thead>
+            <tr><th>Kieli</th><th>Taitotaso</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Suomi</td><td>Hyvä</td></tr>
+            <tr><td>Venäjä</td><td>Äidinkieli</td></tr>
+            <tr><td>Englanti</td><td>Hyvä</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="koulutus" class="row">
+      <div class="col-md-12">
+        <h2>Koulutus & Työkokemus</h2>
+        <ul>
+          <li>Peruskoulu – valmistunut</li>
+          <li>Toinen aste – lukio ja ammattikoulu (kesken)</li>
+          <li>Ei vielä työkokemusta</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="projektit" class="row">
+      <div class="col-md-12">
+        <h2>Projektit</h2>
+        <p>GitHub-linkki projektiin:</p>
+        <p><a href="https://github.com/kendr3w/final_project_calc" target="_blank">Katso projekti GitHubissa</a></p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="yhteys" class="row">
+      <div class="col-md-6">
+        <h2>Yhteydenottolomake</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Nimi</label>
+            <input type="text" name="name" id="name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Sähköposti</label>
+            <input type="email" name="email" id="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Viesti</label>
+            <textarea name="message" id="message" class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Lähetä</button>
+        </form>
+      </div>
+    </div>
   </div>
+
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2025 Egor | Portfolio</p>
+    </div>
+  </footer>
 </body>
 </html>
