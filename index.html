@@ -3,105 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio</title>
+  <title>Egor | Portfolio</title>
 
-  <!-- Bootstrap 3.3.7 CSS -->
+  <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navbar -->
+
+
   <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">Portfolio</a>
+        <a class="navbar-brand" href="#">EGOR</a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#minusta">Minusta</a></li>
-          <li><a href="#osaaminen">Osaaminen</a></li>
-          <li><a href="#koulutus">Koulutus</a></li>
-          <li><a href="#projektit">Projektit</a></li>
-          <li><a href="#yhteys">Yhteys</a></li>
+          <li><a href="#minusta">MINUSTA</a></li>
+          <li><a href="#osaaminen">OSAAMINEN</a></li>
+          <li><a href="#koulutus">KOULUTUS</a></li>
+          <li><a href="#projektit">PROJEKTIT</a></li>
+          <li><a href="#yhteys">YHTEYS</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
+
   <div class="container">
-    <div id="minusta" class="row">
-      <div class="col-sm-12">
-        <h2>Minusta</h2>
-        <p>Olen Egor, 17-vuotias ohjelmoinnin harrastaja. Olen kiinnostunut työharjoittelusta ohjelmistokehityksen ja tietotekniikan parissa. Harrastan ohjelmointia, videopelejä.</p>
-        <p><strong>Vahvuudet:</strong> Uutteruus, tavoiteorientoitunut.<br>
-        <strong>Haaste:</strong> Laiskuus - mutta se saa minut keksimään tehokkaita tapoja työskennellä.</p>
-      </div>
-    </div>
+
+    <!-- MINUSTA -->
+    <section id="minusta">
+      <h2>MINUSTA</h2>
+      <p>Olen Egor, 17-vuotias ohjelmoinnin harrastaja. Olen kiinnostunut työharjoittelusta ohjelmistokehityksen ja tietotekniikan parissa. Harrastan ohjelmointia ja videopelejä.</p>
+      <p><strong>Vahvuudet:</strong> Uutteruus, tavoiteorientoitunut.<br>
+      <strong>Haaste:</strong> Laiskuus - mutta se saa minut keksimään tehokkaita tapoja työskennellä.</p>
+    </section>
 
     <hr>
 
-    <div id="osaaminen" class="row">
-      <div class="col-md-12">
-        <h2>Osaaminen</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>PHP</li>
-          <li>Python</li>
-          <li>C#</li>
-          <li>JavaScript</li>
-          <li>SQL</li>
-        </ul>
-        <h3>Kielitaito</h3>
-        <table class="table table-bordered">
-          <thead>
-            <tr><th>Kieli</th><th>Taitotaso</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Suomi</td><td>Hyvä</td></tr>
-            <tr><td>Venäjä</td><td>Äidinkieli</td></tr>
-            <tr><td>Englanti</td><td>Hyvä</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <!-- OSAAMINEN -->
+    <section id="osaaminen">
+      <h2>OSAAMINEN</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>PHP</li>
+        <li>Python</li>
+        <li>C#</li>
+        <li>JavaScript</li>
+        <li>SQL</li>
+      </ul>
+
+      <h3>KIELITAITO</h3>
+      <table class="table table-bordered">
+        <thead>
+          <tr><th>Kieli</th><th>Taitotaso</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Suomi</td><td>Hyvä</td></tr>
+          <tr><td>Venäjä</td><td>Äidinkieli</td></tr>
+          <tr><td>Englanti</td><td>Hyvä</td></tr>
+        </tbody>
+      </table>
+    </section>
 
     <hr>
 
-    <div id="koulutus" class="row">
-      <div class="col-md-12">
-        <h2>Koulutus & Työkokemus</h2>
-        <ul>
-          <li>Peruskoulu - valmistunut</li>
-          <li>Toinen aste - ammattikoulu (kesken)</li>
-          <li>Ei vielä työkokemusta</li>
-        </ul>
-      </div>
-    </div>
+    <!-- KOULUTUS -->
+    <section id="koulutus">
+      <h2>KOULUTUS & TYÖKOKEMUS</h2>
+      <ul>
+        <li>Peruskoulu - valmistunut</li>
+        <li>Toinen aste - ammattikoulu (kesken)</li>
+        <li>Ei vielä työkokemusta</li>
+      </ul>
+    </section>
 
     <hr>
 
-    <div id="projektit" class="row">
-      <div class="col-md-12">
-        <h2>Projektit</h2>
-        <p><a href="https://github.com/kendr3w" target="_blank">Tutustu kaikkiin projekteihini GitHubissa</a></p>
-      </div>
-    </div>
+    <!-- PROJEKTIT -->
+    <section id="projektit">
+      <h2>PROJEKTIT</h2>
+      <p><a href="https://github.com/kendr3w" target="_blank" class="btn btn-primary">
+        <i class="fa fa-github"></i> Tutustu projekteihini GitHubissa
+      </a></p>
+    </section>
 
     <hr>
 
-    <div id="yhteys" class="row">
-      <div class="col-md-6">
-        <h2>Ota yhteys</h2>
-        <h4>Telegram: @heavenwe</h4>
-        <h4>Instagram: @ecmetry</h4>
-    </div>
+    <!-- YHTEYS -->
+    <section id="yhteys">
+      <h2>OTA YHTEYS</h2>
+      <h4>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" class="social-icon" alt="Telegram">
+        Telegram: <a href="https://t.me/heavenwe" target="_blank">@heavenwe</a>
+      </h4>
+      <h4>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="social-icon" alt="Instagram">
+        Instagram: <a href="https://instagram.com/ecmetry" target="_blank">@ecmetry</a>
+      </h4>
+    </section>
+
   </div>
 
-  <footer class="text-center">
-    <div class="container">
-      <p>&copy; 2025 Egor | Portfolio</p>
-    </div>
+
+  <footer>
+    <p>&copy; 2025 Egor | Portfolio</p>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
